@@ -18,6 +18,10 @@
 \begin{document}
 \maketitle
 
+\begin{abstract}
+Numerical methods are widely used to approximate solutions to differential equations that lack simple analytical solutions. This study investigates how timestep size influences the accuracy of the forward Euler method when simulating one-dimensional free-fall motion under constant gravitational acceleration. A Python simulation was developed and compared against the analytical kinematic solution for five timestep values ranging from 0.01s to 1.0s. Absolute position error was recorded throughout each simulation, and both mean and maximum errors were calculated. Results demonstrate that simulation error increases approximately linearly with timestep size, confirming the first-order convergence properties of Euler's method. These findings illustrate the trade-off between computational efficiency and numerical accuracy and highlight the importance of timestep selection when using explicit numerical integration methods.
+\end{abstract}
+
 \section{Introduction}
 
 Many physical systems all over the universe are defined by differential equations. Although some differential equations have analytical solutions, many are too complex to solve, which is where numerical methods can aid. Numerical methods provide approximate solutions that may not be exact, but are much easier to solve and are usually sufficient for most real-world problems. Therefore, they are widely used in multiple fields, including but not limited to, physics, engineering, chemistry, biology, and many other scientific areas.
